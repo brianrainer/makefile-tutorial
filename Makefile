@@ -1,11 +1,13 @@
-.PHONY: all hello laboon generate clean
+.PHONY: all hello laboon generate clean time
+
+MESSAGE = "hello world!!"
 
 
 all: hello laboon
 
 
 hello:
-	@echo "hello world!"
+	@echo ${MESSAGE}
 
 
 laboon: laboon.txt
@@ -22,3 +24,6 @@ clean:
 	@echo "clean up text file"
 	rm new.txt
 
+
+time:
+	date
