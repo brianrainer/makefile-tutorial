@@ -1,4 +1,8 @@
+.PHONY: all hello laboon generate clean
+
+
 all: hello laboon
+
 
 hello:
 	@echo "hello world!"
