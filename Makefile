@@ -1,4 +1,4 @@
-.PHONY: all hello laboon generate clean time
+.PHONY: all hello laboon generate clean time help
 
 MESSAGE = "hello world!!"
 
@@ -27,3 +27,14 @@ clean:
 
 time:
 	date
+
+
+help:
+	@echo "command-list:"
+	@echo "all"
+	@echo "hello"
+	@echo "laboon"
+	@echo "generate"
+	@echo "clean"
+	@echo "time"
+	@echo "help"
