@@ -6,6 +6,6 @@ jobs:
   deploy-to-heroku:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checout@v2
+    - uses: actions/checkout@v2
     - run: |
         git push heroku master
