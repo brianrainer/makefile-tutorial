@@ -38,3 +38,15 @@ help:
 	@echo "clean"
 	@echo "time"
 	@echo "help"
+
+
+build:
+	@go build
+
+
+test:
+	@go test ./...
+
+
+run:
+	@go run main.go
