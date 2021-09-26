@@ -7,5 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - run: |
-        git push heroku master
+    - uses: akhileshns/heroku-deploy@v3.12.12
+      with:
+        heroku_api_key: ${{ secrets.HEROKU_APIKEY }}
+        heroku_app_name: "lit-sands-23910"
+        heroku_email: "brianrainer5497@gmail.com"
